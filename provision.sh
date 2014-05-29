@@ -59,13 +59,12 @@ mv /vagrant/creds/config ~/.aws/
 #
 # Mount old data
 #
-aws ec2 attach-volume --volume-id vol-c00af683 --instance-id $INSTANCE_ID --device /dev/xvdo
-sudo mkdir /old
-sudo mount /dev/xvdo /old
-sudo chown ubuntu:ubuntu /old
-echo '/dev/xvdo /old ext4 defaults 0 2' | sudo tee -a /etc/fstab
+# aws ec2 attach-volume --volume-id vol-c00af683 --instance-id $INSTANCE_ID --device /dev/xvdo
+# sudo mkdir /old
+# sudo mount /dev/xvdo /old
+# sudo chown ubuntu:ubuntu /old
+# echo '/dev/xvdo /old ext4 defaults 0 2' | sudo tee -a /etc/fstab
 
-# TODO check permissions on /data
 #
 # Mount data drive
 #
