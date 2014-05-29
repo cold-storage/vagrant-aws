@@ -1,0 +1,2 @@
+#!/bin/sh
+iptables -t nat -D PREROUTING -i eth0 -p tcp --dport http -j REDIRECT --to-ports 8080
